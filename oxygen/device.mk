@@ -51,6 +51,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
 
+#PRODUCT_PROPERTY_OVERRIDES += \
+#	ro.config.vc_call_vol_steps=7 \
+ #       ro.config.media_vol_steps=20
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.oxygen.rc
