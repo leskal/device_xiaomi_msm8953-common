@@ -14,6 +14,9 @@ persist.vendor.audio.fluence.voicecall=true \
 persist.vendor.audio.fluence.voicerec=true \
 persist.vendor.bt.enable.splita2dp=false \
 ro.vendor.audio.sdk.fluencetype=fluence \
+persist.vendor.audio.fluence.voicecall=true \
+persist.vendor.audio.fluence.voicerec=false \
+persist.vendor.audio.fluence.speaker=true \
 ro.vendor.audio.sdk.ssr=false \
 vendor.audio.flac.sw.decoder.24bit=true \
 vendor.audio.offload.buffer.size.kb=64 \
@@ -33,7 +36,9 @@ vendor.voice.conc.fallbackpath=deep-buffer \
 vendor.voice.path.for.pcm.voip=true \
 vendor.voice.playback.conc.disabled=true \
 vendor.voice.record.conc.disabled=false \
-vendor.voice.voip.conc.disabled=true
+vendor.voice.voip.conc.disabled=true \
+ro.config.vc_call_vol_steps=11 \
+ro.config.media_vol_steps=20
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
