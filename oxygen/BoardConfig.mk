@@ -37,5 +37,17 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 TARGET_LD_SHIM_LIBS += \
     /system/vendor/lib/libmmcamera_ppeiscore.so|libshim_camera.so
 
+# Treble
+ENABLE_VENDOR_IMAGE := true
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+#BOARD_VENDORIMAGE_PARTITION_SIZE := 536870912
+TARGET_COPY_OUT_VENDOR := vendor
+PRODUCT_VENDOR_MOVE_ENABLED := true
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
+PRODUCT_SHIPPING_API_LEVEL := 25
+
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/oxygen/BoardConfigVendor.mk

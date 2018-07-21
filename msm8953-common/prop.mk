@@ -43,9 +43,14 @@ ro.config.media_vol_steps=20
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
+persist.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
 qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
-ro.qualcomm.bt.hci_transport=smd
+ro.qualcomm.bt.hci_transport=smd \
+ro.bluetooth.wipower=true \
+persist.bt.a2dp.aptx_disable=false \
+persist.bt.a2dp.aptx_hd_disable=false \
+persist.bt.enableAptXHD=true
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \

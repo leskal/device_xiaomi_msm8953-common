@@ -21,6 +21,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_oxygen
 BOARD_VENDOR := Xiaomi
+$(call inherit-product, $(SRC_TARGET_DIR)/product/treble_common.mk)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
