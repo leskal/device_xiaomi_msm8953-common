@@ -24,6 +24,11 @@ TARGET_KERNEL_CONFIG := hardrock_oxygen_defconfig
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
+
 # Partitions
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
@@ -35,19 +40,10 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
 # Shims
 TARGET_LD_SHIM_LIBS += \
-    /system/vendor/lib/libmmcamera_ppeiscore.so|libshim_camera.so
-
-# Treble
-ENABLE_VENDOR_IMAGE := true
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-#BOARD_VENDORIMAGE_PARTITION_SIZE := 536870912
-TARGET_COPY_OUT_VENDOR := vendor
-PRODUCT_VENDOR_MOVE_ENABLED := true
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-PRODUCT_FULL_TREBLE_OVERRIDE := true
-PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
-PRODUCT_SHIPPING_API_LEVEL := 25
+    /vendor/lib/libmmcamera_ppeiscore.so|libshim_camera.so
 
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/oxygen/BoardConfigVendor.mk
+
+
