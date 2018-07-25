@@ -90,7 +90,7 @@ PRODUCT_PACKAGES += \
     tinymixo
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/fstab.qcom:system/etc/fstab.qcom
+    $(LOCAL_PATH)/rootdir/fstab.qcom:system/etc/fstab.qcom
 
 # Audio configuration
 PRODUCT_COPY_FILES += \

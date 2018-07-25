@@ -57,3 +57,4 @@ service goodixfp /vendor/bin/goodixfp
     user system
     group system sdcard_rw
     oneshot
+

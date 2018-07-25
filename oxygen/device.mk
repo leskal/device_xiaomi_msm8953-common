@@ -59,9 +59,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.oxygen.rc
 
-#PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/fstab.qcom:system/etc/fstab.qcom
-
 
 # Sensors
 PRODUCT_PACKAGES += \
