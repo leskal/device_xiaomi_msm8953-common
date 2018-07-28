@@ -89,7 +89,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     tinymixo
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.qcom:system/etc/fstab.qcom
 
 # Audio configuration
