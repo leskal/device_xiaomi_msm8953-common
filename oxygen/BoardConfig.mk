@@ -42,6 +42,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 TARGET_LD_SHIM_LIBS += \
     /vendor/lib/libmmcamera_ppeiscore.so|libshim_camera.so
 
+#BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/oxygen/BoardConfigVendor.mk

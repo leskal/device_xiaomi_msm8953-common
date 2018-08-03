@@ -232,6 +232,6 @@ PRODUCT_VENDOR_MOVE_ENABLED := true
 #PRODUCT_SHIPPING_API_LEVEL := 25
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
-
+#BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 #PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/fstab.qcom:system/etc/fstab.qcom

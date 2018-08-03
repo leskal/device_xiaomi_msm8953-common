@@ -328,9 +328,9 @@ vendor/lib/libwms.so
 vendor/lib64/libwms.so
 
 # Perf
--lib/vendor.qti.hardware.iop@1.0.so
+#-lib/vendor.qti.hardware.iop@1.0.so
 lib/vendor.qti.hardware.perf@1.0.so
--lib64/vendor.qti.hardware.iop@1.0.so
+#-lib64/vendor.qti.hardware.iop@1.0.so
 lib64/vendor.qti.hardware.perf@1.0.so
 vendor/bin/energy-awareness
 vendor/bin/hw/vendor.qti.hardware.iop@1.0-service
