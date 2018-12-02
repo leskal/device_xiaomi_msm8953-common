@@ -23,3 +23,6 @@
 # Vendor
 /dev/block/platform/soc/7824900\.sdhci/by-name/cust                 u:object_r:system_block_device:s0
 /dev/block/platform/soc/7824900\.sdhci/by-name/cust_[ab]            u:object_r:system_block_device:s0
+
+# Old camera sockets
+/data/cam_socket[12]                                                u:object_r:camera_socket:s0
