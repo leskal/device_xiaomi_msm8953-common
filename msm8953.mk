@@ -277,7 +277,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service-qti
 
 # Properties
--include device/xiaomi/msm8953-common/prop.mk
+#-include device/xiaomi/msm8953-common/prop.mk
 
 # QMI
 PRODUCT_PACKAGES += \
