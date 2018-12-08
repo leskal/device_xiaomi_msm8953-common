@@ -77,7 +77,6 @@ persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
-ro.sf.lcd_density=420 \
 vendor.gralloc.enable_fb_ubwc=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.rotator_downscale=1 \
